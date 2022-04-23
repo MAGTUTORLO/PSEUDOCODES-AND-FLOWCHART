@@ -1,0 +1,21 @@
+START
+"Enter a:" GET a
+"Enter b:" GET b
+"Enter c:" GET c
+d <-- (b*b) - (4*a*c)
+
+IF d>0
+	x1 <-- (-b+sqrt(d))/(2*a)
+	x2 <-- (-b-sqrt(d))/(2*a)
+	PUT "There are TWO REAL SOLUTIONS"
+	PUT "Root 1:" +x1
+	PUT "Root 2:" +x2
+ELSE IF d==0
+	x1 <-- -b/(2*a)
+	x2 <-- -b/(2*a)
+	PUT "There are ONLY ONE REAL SOLUTIONS"
+	PUT "Root 1:" +x1
+	PUT "Root 2:" +x2
+ELSE
+	PUT "There are TWO COMPLEX SOLUTIONS"
+END
