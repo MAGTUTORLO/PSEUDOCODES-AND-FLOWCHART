@@ -1,0 +1,14 @@
+START
+1 "Enter kg:" GET kg
+2 "Enter m:" GET m
+3 BMI <-- kg - (m*m)
+
+4 IF BMI<18.5
+5	PUT "Underweight"
+6 ELSE IF 18.5 < BMI and BMI < 24.9
+7	PUT "Normal"
+8 ELSE IF 25 < BMI and BMI < 30
+9 	PUT "Overweight"
+10 ELSE IF BMI > 30
+11	PUT "Obese"
+END
